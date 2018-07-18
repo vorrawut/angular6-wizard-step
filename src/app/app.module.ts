@@ -8,6 +8,7 @@ import { KycComponent } from './components/kyc/kyc.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { UserInfoDetailComponent } from './components/user-info-detail/user-info-detail.component';
 import { BankAccountComponent } from './components/bank-account/bank-account.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BankAccountComponent } from './components/bank-account/bank-account.com
     KycComponent,
     UserInfoComponent,
     UserInfoDetailComponent,
-    BankAccountComponent
+    BankAccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
