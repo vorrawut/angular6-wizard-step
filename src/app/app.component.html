@@ -1,6 +1,9 @@
-<div class="button-group">
-  <button class="back-btn" *ngIf="isHome" (click)="back()">Back</button>
-  <button class="next-btn">Next</button>
-</div>
+<router-outlet>
+</router-outlet>
 
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="button-group">
+    <button class="btn btn-primary btn-back" *ngIf="isHome" (click)="back()">Back</button>
+    <button class="btn btn-primary btn-next">Next</button>
+  </div>
+</div>

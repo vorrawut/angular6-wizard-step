@@ -1,4 +1,5 @@
-import { ActivatedRoute } from '@angular/router';
+// Angular
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _route: ActivatedRoute) { }
+  constructor(private _route: Router) { }
 
-  ngOnInit() {
-    console.log(this._route.snapshot.url);
+  ngOnInit() { }
+
+  goToPrevious() {
+    this._route.navigate(['/home']);
+  }
+
+  goToNext() {
+    this._route.navigate(['/kyc']);
   }
 
 }

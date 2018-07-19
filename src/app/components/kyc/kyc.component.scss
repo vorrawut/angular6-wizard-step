@@ -1,0 +1,27 @@
+.card {
+    margin-top: 40px;
+}
+
+.form-group {
+    position: relative;
+    p {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        margin-right: 5px;
+    }
+}
+
+.btn-group-toggle {
+    display: inline-block;
+}
+
+.btn-answer-left {
+    // position: absolute;
+    margin-right: 100px;
+    width: 100px;
+}
+
+.btn-answer-right {
+    // position: absolute;
+    width: 100px;
+}
