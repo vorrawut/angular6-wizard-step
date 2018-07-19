@@ -1,13 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    background-color: #ffe9e9;
+
+$text-home: blue;
+$bg-color: #f6f4e9;
+
+#body-app {
+    background-color: $bg-color;
 }
 
 h1 {
     text-align: center;
 }
 
-.card{
+.card {
     margin-top: 40px;
     margin-bottom: 20px;
 }
