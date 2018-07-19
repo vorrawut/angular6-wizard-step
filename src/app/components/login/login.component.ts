@@ -13,11 +13,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() { }
 
-  goToPrevious() {
-    this._route.navigate(['/home']);
+  goToPrevious(form: any) {
+    this._route.navigate(['']);
   }
 
-  goToNext() {
+  goToNext(form: any) {
     this._route.navigate(['/kyc']);
   }
 

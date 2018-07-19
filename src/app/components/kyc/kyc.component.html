@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-body">
       <h1>KYC</h1>
-      <form action="" class="form">
+      <form #kycForm="ngForm" action="" class="form">
         <div class="form-group">
           <div class="question2">
             <label for="">Question1</label>
@@ -46,6 +46,15 @@
               </label>
             </div>
           </div>
+        </div>
+
+
+        <div class="form-group text-center space-20">
+          <button class="btn btn-outline-rounded btn-info" (click)="goToPrevious(kycForm)">
+            <span style="margin-right:10px;" class="glyphicon glyphicon-arrow-left"></span> Previous</button>
+          <button class="btn btn-outline-rounded btn-info" [disabled]="!workForm.valid" (click)="goToNext(kycForm)"> Next
+            <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span>
+          </button>
         </div>
       </form>
     </div>
