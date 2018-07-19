@@ -1,3 +1,5 @@
+// Angular
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserInfoDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _route: Router) { }
 
   ngOnInit() {
+  }
+
+  goToPrevious() {
+    this._route.navigate(['user-info']);
   }
 
 }
