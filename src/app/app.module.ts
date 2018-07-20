@@ -18,6 +18,7 @@ import { UserInfoDetailComponent } from './components/user-info-detail/user-info
 import { BankAccountComponent } from './components/bank-account/bank-account.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     UserInfoDetailComponent,
     BankAccountComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
